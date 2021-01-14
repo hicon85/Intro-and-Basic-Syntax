@@ -1,0 +1,31 @@
+using System;
+
+namespace Foreign_Languages
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            string languages = Console.ReadLine();
+
+            switch (languages)
+            {
+                case "England":
+                case "USA":
+                    Console.WriteLine("English");
+                    break;
+
+                case "Spain":
+                case "Argentina":
+                case "Mexico":
+                    Console.WriteLine("Spanish");
+                    break;
+
+                    
+                default:
+                    Console.WriteLine("unknown");
+                    break;
+            }
+        }
+    }
+}
