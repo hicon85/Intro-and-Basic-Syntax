@@ -1,0 +1,19 @@
+using System;
+
+namespace Even_Number
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            double n = double.Parse(Console.ReadLine());
+
+            while (n%2!=0)
+            {
+                Console.WriteLine("Please write an even number.");
+                n = double.Parse(Console.ReadLine());
+            }
+            Console.WriteLine($"The number is: {Math.Abs(n)}");
+        }
+    }
+}
