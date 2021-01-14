@@ -1,0 +1,19 @@
+using System;
+
+namespace Multiplication_Table_2
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            double integer = double.Parse(Console.ReadLine());
+            double times = double.Parse(Console.ReadLine());
+
+            do
+            {
+                Console.WriteLine($"{integer} X {times} = {integer*times}");
+                times++;
+            } while (times<=10);
+        }
+    }
+}
